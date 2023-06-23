@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://badasstechie.github.io/lib/three/112.1/three.min.js"></script>
+    <script src="https://badasstechie.github.io/lib/three/112.1/BufferGeometryUtils.min.js"></script>
+    <script src="https://badasstechie.github.io/lib/stats/stats.min.js"></script>
+</head>
+<body onload = "firstRun()">
+    <div id="score"></div>
+    <div id = "splash">
+        <div id="title">
+            Can you help the chicken to cross the road?<br>
+            **
+            <br>
+            Puedes ayudar al pollo a cruzar el camino?
+        </div>
+        <div id = "loading">
+            <div class = "main letter">LOADING</div>
+            <div class = "period1 letter">.</div>
+            <div class = "period2 letter">.</div>
+            <div class = "period3 letter">.</div>
+        </div>
+        <div id = "instructions">Use the arrows to move. Help the chicken to cross the road as you can.<br>**<br>
+            Usa las flechas para moverse. Ayuda el pollo a cruzar el camino como puedas.
+        </div>
+        <div id = "play">
+            PLAY
+            <button id = "pressPlay" disabled onclick = "init()"></button>
+        </div>
+    </div>
+    <button id="restart" onclick = "init()">Play Again</button>
+    <script src="index.js"></script>
+</body>
+</html>
