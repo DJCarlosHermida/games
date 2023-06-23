@@ -8,16 +8,16 @@ var random = Math.floor(random);
 do
 {
 var jugador = 0;
-var jugador = prompt("Di un numero del 1 al 100")
+var jugador = prompt("Di un numero entre el 0 y el 100")
     contador++
 if(random > jugador)
 {
-	alert ("El numero es mas grande")
+	alert ("es mas grande")
 	
 }
 else if(random < jugador)
 {
-	alert ("El numero es mas pequeño")
+	alert ("es mas pequeño")
 }
 else 
 {
@@ -30,8 +30,8 @@ else
     var segundos = futuros - presentes;
     var minutos = futuron - presenten;
     document.write("Intentos: " + contador)
-    
-    document.write("   Tiempo: " + minutos + "min y " + segundos + "s");
+    document.write("Tiempo: " + minutos + "min y " + segundos + "s");
+    document.write(" El Número era: " + random)
 
 
 /* El juego va de que tu, el usuario, tienes de adivinar el numero random que elige el ordenador siguiendo sus pistas. 
